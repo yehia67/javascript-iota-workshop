@@ -16,7 +16,7 @@ const seed =
   'HELLOWORLDHELLOWORLDHELLOWORLDHELLOWORLDHELLOWORLDHELLOWORLDHELLOWORLDHELLOWORL9D'
 
 iota
-  .getNewAddress(seed, { index: 0, total: 1 })
+  .getNewAddress(seed, { index: 0, total: 1,checksum:true })
   .then(address => {
     console.log('Your address is: ' + address)
     console.log('Paste this address into https://faucet.devnet.iota.org')

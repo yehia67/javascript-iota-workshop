@@ -5,12 +5,12 @@
 const iotaLibrary = require('@iota/core')
 
 const iota = iotaLibrary.composeAPI({
-  provider: 'https://nodes.devnet.thetangle.org:443'
+    provider: 'https://nodes.devnet.iota.org:443' //https://nodes.devnet.thetangle.org:443
 })
 
 iota
-  .getNodeInfo()
-  .then(response => console.log(response))
-  .catch(err => {
-    console.error(err)
-  })
+    .getNodeInfo()
+    .then(response => console.log(response))
+    .catch(err => {
+        console.error(err)
+    })

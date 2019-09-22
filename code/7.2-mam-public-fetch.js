@@ -9,16 +9,16 @@ const { trytesToAscii } = require('@iota/converter')
 Mam.init('https://nodes.devnet.thetangle.org:443')
 
 const root =
-  'OXPOYTSZEOGUOITHYBWDYHXNCLRVQHGXMFMEIJLNHNDEWJYWQHGRPTQJ99MUWRDAOVPBIGSW9MSQLMOOA'
+    'XAUYFSKVDPSVJUWUXCDKZIV9UEG9UGZCNVGEHPBDLKEMGWXEOODXWHCHIEGQSX9RBTNGUHUQEKB9AEZXI'
 
 // Display coordinate data on our screen when we receive it
 const showData = raw => {
-  const data = trytesToAscii(raw)
-  console.log(data)
+    const data = trytesToAscii(raw)
+    console.log(data)
 }
 
-const readMam = async () => {
-  await Mam.fetch(root, 'public', null, showData)
+const readMam = async() => {
+    await Mam.fetch(root, 'public', null, showData)
 }
 
 readMam()
