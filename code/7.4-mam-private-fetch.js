@@ -7,9 +7,9 @@ const { trytesToAscii } = require('@iota/converter')
 
 // Init State
 let root =
-  'QQUTOYQDKWGEOSNDERIUTLNFJLKXKPGMZVDJJJNPMSXSIYHJDUUMZUEI9GGQSFQJD9GRVGCMNDDATPWDN'
+  'GXQ9CILUGRBKXKNGUCEUKAGWUAMLBFLLKHYGAGIZZUH9OCVOPUCLKHA9BIJDKVQPLYNFYL9NCZOCGDZEK'
 const mamType = 'restricted'
-const mamSecret = 'DONTSHARETHIS'
+const mamSecret = 'DONTSHARETHISPASSWORD'
 
 // Initialise MAM State
 let mamState = Mam.init('https://nodes.devnet.iota.org:443')

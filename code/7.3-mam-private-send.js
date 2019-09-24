@@ -9,7 +9,7 @@ let mamState = Mam.init('https://nodes.devnet.thetangle.org:443')
 
 // We are using MAM restricted mode with a shared secret in this example
 const mamType = 'restricted'
-const mamSecret = 'DONTSHARETHIS'
+const mamSecret = 'DONTSHARETHISPASSWORD'
 
 mamState = Mam.changeMode(mamState, mamType, mamSecret)
 
@@ -27,5 +27,7 @@ const publish = async data => {
   console.log('Address: ' + message.root)
 }
 
-publish('Super Secret Message')
-publish('Super Secret Message2')
+
+publish('First Message')
+publish('Second Message')
+publish('Third Message')

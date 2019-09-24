@@ -2,8 +2,9 @@ const Mam = require('@iota/mam')
 const { asciiToTrytes, trytesToAscii } = require('@iota/converter')
 
 // Enter root of the
-const root = 'BOHZQ9IINKOPPWWOIDELRSVGNICXMJLMEKYPNTHPHNEMQYASALLVUDOOLSXJDBYO9UGQMBWEEHZPDCNZE'
-
+const root = ''
+const mamType = 'restricted'
+const mamSecret = 'DONTSHARETHISPASSWORD'
 async function initMam() {
   console.log('\r\n\r\n')
   console.log('Listening to MAM stream...')
@@ -19,7 +20,7 @@ async function checkMam() {
   }
 
   // The showData callback will be called in order for each message found
-  const data = await Mam.fetch(root, 'public', null, showData)
+  const data = await Mam.fetch(root, mamType, mamSecret, showData)
   nextRoot = data.nextRoot
 
   // Check again in 5 seconds

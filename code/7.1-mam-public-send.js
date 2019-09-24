@@ -23,5 +23,6 @@ const publish = async data => {
     console.log('Address: ' + message.root)
 }
 
-publish('Super public message')
-publish('Super public message2')
+publish('First Message')
+publish('Second Message')
+publish('Third Message')
