@@ -9,12 +9,12 @@ const iota = iotaLibrary.composeAPI({
 })
 
 const address =
-    'HEQLOWORLDHIBYEWORLDHIBYEWORLDHIBYEWORLDHIBYEWORLDHIBYEWORLDHIBYEWORLDHIBYEWOR99D'
+    '99QLOWORLDHIBYEWORLDHIBYEWORLDHIBYEWORLDHIBYEWORLDHIBYEWORLDHIBYEWORLDHIBYEWOR99D'
 
 iota
     .findTransactionObjects({ addresses: [address] })
     .then(response => {
-        console.log(response)
+        console.log(response[1].data)
     })
     .catch(err => {
         console.error(err)
